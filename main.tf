@@ -1,5 +1,5 @@
 terraform {
-    required_version = "~> 1.0.3" // added latest version
+    required_version = "~> 1.4.6" // added latest version
     required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -14,6 +14,6 @@ provider "aws" {
 	}
 
 resource "aws_instance" "Raminfra" {
-	ami = "ami-0c2b8ca1dad447f8a" 
+	ami = "ami-0889a44b331db0194" 
 	instance_type = "t2.micro"
 }
